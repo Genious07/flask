@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import openai
-
+import os
 app = Flask(__name__)
 
 # Set your OpenAI API key
-openai.api_key = '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'
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
