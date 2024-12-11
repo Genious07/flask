@@ -211,7 +211,7 @@ python-socketio==5.11.4
 pythonnet==3.0.4
 pytweening==1.2.0
 pytz==2024.2
-pywin32==308
+pywin32
 pywinpty==2.0.14
 PyYAML==6.0.2
 pyzmq==26.2.0
